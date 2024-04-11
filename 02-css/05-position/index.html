@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Position</title>
+
+<style>
+
+.container{
+
+    position:relative;
+
+    width:600px;
+
+    height:300px;
+
+    border:2px solid black;
+
+    margin:auto;
+
+}
+
+.static{
+
+    background:lightblue;
+
+    padding:10px;
+
+}
+
+.relative{
+
+    position:relative;
+
+    left:40px;
+
+    top:10px;
+
+    background:lightgreen;
+
+    padding:10px;
+
+}
+
+.absolute{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    background:orange;
+
+    padding:10px;
+
+}
+
+.fixed{
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    background:red;
+
+    color:white;
+
+    padding:10px;
+
+}
+
+.sticky{
+
+    position:sticky;
+
+    top:0;
+
+    background:purple;
+
+    color:white;
+
+    padding:10px;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="sticky">
+    Sticky Navigation Bar
+</div>
+
+<h1>CSS Position Property</h1>
+
+<div class="container">
+
+    <div class="static">
+        Static Position
+    </div>
+
+    <div class="relative">
+        Relative Position
+    </div>
+
+    <div class="absolute">
+        Absolute Position
+    </div>
+
+</div>
+
+<div class="fixed">
+    Fixed Button
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<p>
+Scroll the page to observe the Sticky bar and the Fixed button.
+</p>
+
+</body>
+</html>
