@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Design</title>
+
+<style>
+
+body{
+
+    font-family:Arial;
+
+    margin:0;
+
+}
+
+.header{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.container{
+
+    display:flex;
+
+}
+
+.sidebar{
+
+    width:30%;
+
+    background:#ddd;
+
+    padding:20px;
+
+}
+
+.content{
+
+    width:70%;
+
+    padding:20px;
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.sidebar{
+
+    width:100%;
+
+}
+
+.content{
+
+    width:100%;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+
+<h1>Responsive Website</h1>
+
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>Sidebar</h2>
+
+<p>Navigation Menu</p>
+
+</div>
+
+<div class="content">
+
+<h2>Main Content</h2>
+
+<p>Resize the browser window to see the responsive layout.</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
