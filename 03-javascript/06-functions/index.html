@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<script>
+
+    // Function without parameters
+    function greet() {
+        document.write("<h3>Hello, Welcome to JavaScript!</h3>");
+    }
+
+    greet();
+
+    // Function with parameters
+    function add(a, b) {
+        return a + b;
+    }
+
+    let result = add(10, 20);
+
+    document.write("Addition = " + result + "<br>");
+
+    // Arrow Function
+    const square = (num) => num * num;
+
+    document.write("Square of 5 = " + square(5));
+
+</script>
+
+</body>
+</html>
