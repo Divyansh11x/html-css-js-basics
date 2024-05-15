@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays</title>
+</head>
+<body>
+
+<h1>JavaScript Arrays</h1>
+
+<script>
+
+let fruits = ["Apple","Mango","Banana","Orange"];
+
+document.write("<h3>Original Array</h3>");
+document.write(fruits + "<br><br>");
+
+document.write("First Element : " + fruits[0] + "<br>");
+document.write("Second Element : " + fruits[1] + "<br><br>");
+
+fruits.push("Pineapple");
+document.write("After Push : " + fruits + "<br>");
+
+fruits.pop();
+document.write("After Pop : " + fruits + "<br>");
+
+document.write("<hr>");
+
+document.write("<h3>Loop Through Array</h3>");
+
+for(let i=0;i<fruits.length;i++){
+
+    document.write(fruits[i] + "<br>");
+
+}
+
+</script>
+
+</body>
+</html>
