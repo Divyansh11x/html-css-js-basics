@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+
+<h1>JavaScript Objects</h1>
+
+<script>
+
+let student = {
+
+    name : "Divyansh",
+
+    age : 18,
+
+    course : "BCA",
+
+    city : "Bareilly",
+
+    display : function(){
+
+        return this.name + " is studying " + this.course;
+
+    }
+
+};
+
+document.write("Name : " + student.name + "<br>");
+
+document.write("Age : " + student.age + "<br>");
+
+document.write("Course : " + student.course + "<br>");
+
+document.write("City : " + student.city + "<br>");
+
+document.write(student.display());
+
+</script>
+
+</body>
+</html>
