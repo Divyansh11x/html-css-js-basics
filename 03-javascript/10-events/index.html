@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Events</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    text-align:center;
+    margin-top:50px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:18px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1 id="heading">JavaScript Events</h1>
+
+<button onclick="changeText()">
+Click Me
+</button>
+
+<script>
+
+function changeText(){
+
+    document.getElementById("heading").innerHTML =
+    "Button Clicked Successfully!";
+
+}
+
+</script>
+
+</body>
+</html>
