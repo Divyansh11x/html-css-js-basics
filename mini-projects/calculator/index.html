@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <br><br>
+
+    <button onclick="calculate('+')">Add</button>
+    <button onclick="calculate('-')">Subtract</button>
+    <button onclick="calculate('*')">Multiply</button>
+    <button onclick="calculate('/')">Divide</button>
+    <button onclick="calculate('%')">Modulus</button>
+
+    <h2 id="result"></h2>
+
+
+    <script>
+
+        function calculate(operator) {
+
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let answer;
+
+            switch (operator) {
+
+                case '+':
+                    answer = a + b;
+                    break;
+
+                case '-':
+                    answer = a - b;
+                    break;
+
+                case '*':
+                    answer = a * b;
+                    break;
+
+                case '/':
+                    if (b === 0) {
+                        answer = "Cannot divide by zero";
+                    } else {
+                        answer = a / b;
+                    }
+                    break;
+
+                case '%':
+                    answer = a % b;
+                    break;
+
+                default:
+                    answer = "Invalid operation";
+            }
+
+            document.getElementById("result").innerHTML =
+                "Answer = " + answer;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
